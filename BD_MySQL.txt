@@ -1,0 +1,14 @@
+
+/* Criando o bando de dados no MySQL para esse projeto. */
+
+CREATE DATABASE pmysql;
+
+USE pmysql;  /*Se conectando ao banco */
+
+CREATE TABLE produtos (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	nome VARCHAR(30) NOT NULL,
+	preco DECIMAL(8,2) NOT NULL,
+	estoque INT NOT NULL
+
+);
